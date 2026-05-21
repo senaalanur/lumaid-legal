@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumaid — Legal</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #08060F;
+      color: #CBD5E1;
+      line-height: 1.7;
+    }
+    nav {
+      position: sticky; top: 0;
+      background: rgba(8,6,15,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 16px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      z-index: 100;
+    }
+    .nav-logo { font-size: 20px; color: #fff; font-weight: 600; letter-spacing: 4px; }
+    .nav-tabs { display: flex; gap: 8px; }
+    .tab-btn {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #64748B;
+      padding: 7px 16px;
+      border-radius: 50px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .tab-btn:hover { border-color: rgba(168,85,247,0.4); color: #A855F7; }
+    .tab-btn.active { background: rgba(168,85,247,0.15); border-color: rgba(168,85,247,0.5); color: #A855F7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 60px 24px 120px; }
+    .page { display: none; }
+    .page.active { display: block; }
+    .hero { margin-bottom: 48px; }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(168,85,247,0.12);
+      border: 1px solid rgba(168,85,247,0.3);
+      color: #A855F7;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      padding: 4px 14px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: 36px; color: #fff; font-weight: 600; letter-spacing: -.5px; margin-bottom: 12px; line-height: 1.2; }
+    .updated { font-size: 13px; color: #64748B; }
+    .updated span { color: #A855F7; }
+    .section { margin-bottom: 40px; }
+    h2 { font-size: 18px; color: #fff; font-weight: 600; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    p { font-size: 15px; color: #CBD5E1; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 15px; color: #CBD5E1; margin-bottom: 6px; }
+    a { color: #A855F7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight-box {
+      background: rgba(168,85,247,0.08);
+      border: 1px solid rgba(168,85,247,0.2);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+    .highlight-box p { margin-bottom: 0; }
+    .contact-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-top: 40px;
+    }
+    .contact-box h3 { font-size: 16px; color: #fff; margin-bottom: 8px; }
+    .contact-box p { font-size: 14px; margin-bottom: 4px; }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 12px;
+      color: #64748B;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">lumaid</span>
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="showPage('privacy')">Privacy Policy</button>
+    <button class="tab-btn" onclick="showPage('terms')">Terms of Service</button>
+  </div>
+</nav>
+
+<!-- PRIVACY POLICY -->
+<div class="container">
+  <div id="privacy" class="page active">
+    <div class="hero">
+      <div class="hero-tag">PRIVACY POLICY</div>
+      <h1>Your privacy matters to us.</h1>
+      <p class="updated">Last updated <span>May 21, 2026</span></p>
+    </div>
+
+    <div class="highlight-box">
+      <p>Lumaid is a wellness companion app. We collect only what's necessary to make the app work and improve your experience. We never sell your data.</p>
+    </div>
+
+    <div class="section">
+      <h2>1. Information We Collect</h2>
+      <p>When you use Lumaid, we may collect:</p>
+      <ul>
+        <li><strong>Account information</strong> — your email address when you create an account via Supabase authentication.</li>
+        <li><strong>Mood data</strong> — daily mood check-ins you log within the app, stored locally on your device.</li>
+        <li><strong>Conversation data</strong> — messages you send to AI companions, processed in real-time to generate responses. Conversation summaries may be stored to enable memory features.</li>
+        <li><strong>Usage data</strong> — basic app usage statistics such as streak counts and message counts, stored locally on your device.</li>
+        <li><strong>Newsletter preference</strong> — if you opt in, your email address for founder updates.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>To provide and improve the AI companion experience</li>
+        <li>To enable persistent memory so your companion remembers context across sessions</li>
+        <li>To send you streak reminders and wellness notifications (only if you grant permission)</li>
+        <li>To send founder updates and app news (only if you opt in)</li>
+        <li>To maintain your account and authenticate you securely</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. AI & Third-Party Services</h2>
+      <p>Lumaid uses the following third-party services to operate:</p>
+      <ul>
+        <li><strong>Groq API (LLaMA 3.3 70B)</strong> — processes your messages to generate AI responses. Messages are sent to Groq's servers for inference. Please review <a href="https://groq.com/privacy-policy/" target="_blank">Groq's Privacy Policy</a>.</li>
+        <li><strong>Supabase</strong> — provides authentication and database storage for your account and memory data. Please review <a href="https://supabase.com/privacy" target="_blank">Supabase's Privacy Policy</a>.</li>
+        <li><strong>Railway</strong> — hosts our backend server that proxies API requests. No personal data is permanently stored on Railway.</li>
+      </ul>
+      <p>We never expose your API keys or credentials to third parties beyond what's necessary to operate the service.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Data Storage & Security</h2>
+      <p>Most of your data (mood history, chat history, streak data) is stored locally on your device using AsyncStorage and is not transmitted to our servers unless explicitly required for a feature (such as persistent AI memory).</p>
+      <p>Account data is stored securely in Supabase with Row Level Security (RLS) enabled — meaning only you can access your own data.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access the data we hold about you</li>
+        <li>Request deletion of your account and all associated data</li>
+        <li>Opt out of newsletter communications at any time via Profile settings</li>
+        <li>Use Lumaid as a guest without creating an account</li>
+      </ul>
+      <p>To delete your account, go to <strong>Profile → Delete Account</strong> within the app. This permanently removes all your data.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Children's Privacy</h2>
+      <p>Lumaid is not intended for users under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us immediately.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or via email if you have an account.</p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Questions about privacy?</h3>
+      <p>Email us at <a href="mailto:lumaidgpt@gmail.com">lumaidgpt@gmail.com</a></p>
+      <p>We aim to respond within 48 hours.</p>
+    </div>
+  </div>
+
+  <!-- TERMS OF SERVICE -->
+  <div id="terms" class="page">
+    <div class="hero">
+      <div class="hero-tag">TERMS OF SERVICE</div>
+      <h1>Terms of Service</h1>
+      <p class="updated">Last updated <span>May 21, 2026</span></p>
+    </div>
+
+    <div class="highlight-box">
+      <p>By using Lumaid, you agree to these terms. Please read them carefully. Lumaid is a wellness tool — it is not a substitute for professional mental health care.</p>
+    </div>
+
+    <div class="section">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading, installing, or using the Lumaid application, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the app.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Description of Service</h2>
+      <p>Lumaid is an AI-powered wellness companion app that provides mood tracking, daily check-ins, and conversational support through AI personas. The app is designed to support emotional wellbeing and self-reflection.</p>
+      <p><strong>Lumaid is not a medical device, therapy service, or mental health treatment.</strong> The AI companions are not licensed therapists, counselors, or healthcare providers. If you are experiencing a mental health crisis, please contact a qualified professional or emergency services.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. User Accounts</h2>
+      <ul>
+        <li>You must provide a valid email address to create an account.</li>
+        <li>You are responsible for maintaining the security of your account credentials.</li>
+        <li>You may use Lumaid as a guest without creating an account, with limited features.</li>
+        <li>You must be at least 13 years of age to use Lumaid.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Acceptable Use</h2>
+      <p>You agree not to use Lumaid to:</p>
+      <ul>
+        <li>Violate any applicable laws or regulations</li>
+        <li>Attempt to reverse engineer, hack, or disrupt the service</li>
+        <li>Use the service to generate harmful, abusive, or illegal content</li>
+        <li>Impersonate any person or entity</li>
+        <li>Use automated systems to access the service in a way that exceeds reasonable use</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>5. AI-Generated Content</h2>
+      <p>Lumaid uses large language models (LLaMA 3.3 70B via Groq) to generate responses. AI-generated content may occasionally be inaccurate, incomplete, or inappropriate. We do not guarantee the accuracy of AI responses.</p>
+      <p>You should not rely on AI responses for medical, legal, financial, or other professional advice.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Intellectual Property</h2>
+      <p>The Lumaid app, including its design, branding, personas, and content, is owned by the Lumaid team. You may not copy, modify, distribute, or create derivative works without explicit written permission.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Disclaimers & Limitation of Liability</h2>
+      <p>Lumaid is provided "as is" without warranties of any kind. To the fullest extent permitted by law, Lumaid and its creators are not liable for any indirect, incidental, or consequential damages arising from your use of the service.</p>
+      <p>We are not responsible for any harm resulting from reliance on AI-generated content.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Termination</h2>
+      <p>We reserve the right to suspend or terminate your account if you violate these Terms of Service. You may delete your account at any time through the app.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Changes to Terms</h2>
+      <p>We may update these Terms of Service at any time. Continued use of Lumaid after changes constitutes acceptance of the new terms. We will notify users of significant changes via the app or email.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Governing Law</h2>
+      <p>These terms are governed by the laws of the State of New York, United States, without regard to conflict of law provisions.</p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Questions about these terms?</h3>
+      <p>Email us at <a href="mailto:lumaidgpt@gmail.com">lumaidgpt@gmail.com</a></p>
+      <p>We aim to respond within 48 hours.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2025 Lumaid. All rights reserved. &nbsp;·&nbsp;
+  <a href="mailto:lumaidgpt@gmail.com">lumaidgpt@gmail.com</a>
+</footer>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+  window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
